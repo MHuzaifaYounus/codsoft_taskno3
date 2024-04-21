@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(13, 12, 12);
+    font-family: "Orbitron", sans-serif;
+    user-select: none;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 500px;
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+
+    animation: anime 2s linear forwards;
+
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+   
+    }
+
+    100% {
+        opacity: 100;
+  
+    }
+}
+
+.screen {
+    width: 80%;
+    height: 15%;
+    text-align: end;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+
+}
+
+.screen input {
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    text-align: end;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.screen p {
+    color: whitesmoke;
+}
+
+.dialpad {
+    height: 70%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.row {
+    height: 100px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.num-btn {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    background-color: rgb(39, 38, 38);
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.num-btn:hover {
+    background-color: rgb(66, 66, 66);
+
+
+}
+
+.acbtn {
+    background-color: rgb(169, 118, 25);
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+.acbtn:hover {
+    background-color: rgb(81, 57, 12);
+
+
+}
+
+.delbtn {
+    background-color: rgb(169, 38, 38);
+    font-weight: 100;
+    transition: 0.5s;
+
+}
+
+.delbtn:hover {
+    background-color: rgb(94, 17, 17);
+
+
+
+}
+
+.graybtn {
+    background-color: rgb(112, 106, 106);
+    transition: 0.5s;
+}
+
+.graybtn:hover {
+    background-color: rgb(207, 206, 206);
+    color: black;
+
+
+}
+
+.operators {
+    background-color: rgb(194, 86, 46);
+    transition: 0.5s;
+}
+
+.operators:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+.equalbtn {
+    background-color: rgb(76, 111, 25);
+    transition: 0.5s;
+}
+
+.equalbtn:hover {
+    background-color: rgb(46, 67, 16);
+
+}
+
+#_0 {
+    width: 180px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:486px) {
+    .dialpad {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        height: 150vw;
+    }
+
+    .num-btn {
+        width: 18vw;
+        font-size: 1.4em;
+        height: 18vw;
+    }
+
+    #_0 {
+        width: 36vw;
+
+    }
+}
